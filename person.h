@@ -3,7 +3,7 @@
 #include "stock.h"
 #include "foreign_account.h"
 
-class PersonAccount :virtual public Account,virtual public stock{
+class PersonAccount :virtual public Account, public stock{
 private:
     string name;
     vector<ForeignAccount*> foreign_accounts;
